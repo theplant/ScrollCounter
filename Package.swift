@@ -8,12 +8,18 @@ let package = Package(
     products: [
         .library(
             name: "ScrollCounter",
-            targets: ["ScrollCounter"]),
+            targets: ["ScrollCounter"]
+        ),
     ],
-
+   
     targets: [
         .target(
             name: "ScrollCounter",
-            path: "ScrollCounter")
+            dependencies: []
+        ),
+        .testTarget(
+            name: "ScrollCounterTests",
+            dependencies: ["ScrollCounter"]
+        ),
     ]
 )
