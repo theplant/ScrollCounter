@@ -23,7 +23,7 @@ extension UIColor {
     }
 }
 
-public class NumberScrollCounter: UIView {
+@objc public class NumberScrollCounter: UIView {
     
     // MARK: - Parameters
     
