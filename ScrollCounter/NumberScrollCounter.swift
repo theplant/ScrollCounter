@@ -11,6 +11,18 @@ import UIKit
 /**
  A view that composes a collection of `DigitScrollCounter`s and punctuations to create a number that can be animated with a scrolling effect as seen in the Robinhood app.
  */
+
+extension UIColor {
+    convenience init(hex: Int) {
+        self.init(
+            red: CGFloat((hex >> 16) & 0xFF) / 255.0,
+            green: CGFloat((hex >> 8) & 0xFF) / 255.0,
+            blue: CGFloat(hex & 0xFF) / 255.0,
+            alpha: 1.0
+        )
+    }
+}
+
 public class NumberScrollCounter: UIView {
     
     // MARK: - Parameters
@@ -39,7 +51,7 @@ public class NumberScrollCounter: UIView {
     /// The font to use for all of the labels used in building the `NumberScrollCounter`.
     public var font: UIFont =  UIFont(name: "SpeedeeApp-Bold", size: 41)!
     /// The text color to use for all of the labels used in building the `NumberScrollCounter`.
-    public var textColor: UIColor = H.c(0x292929)
+    public var textColor: UIColor = UIColor(hex: 0x292929)
     private let digitScrollerBackgroundColor: UIColor = .clear
     
     /// The string to use as a prefix to the items in `digitScrollers`.
