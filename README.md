@@ -39,3 +39,15 @@ let numberCounter = NumberScrollCounter(value: 1, scrollDuration: 0.33, decimalP
 // Set a new value.  This will trigger the animation to show the given value.
 numberCounter.setValue(123.45)
 ```
+## License
+
+This project is based on the original work of Shant Tokatyan, licensed under the MIT License.
+
+### Modifications
+
+The following changes have been made by The Plant:
+
+2025-1-8: Support number separator is supported.
+2025-1-8: Change number color and font.
+For the original project, see [https://github.com/stokatyan/ScrollCounter].
+
