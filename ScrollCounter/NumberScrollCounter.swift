@@ -181,7 +181,7 @@ public class NumberScrollCounter: UIView {
         
     }
     
-    func getNumWidth() -> CGFloat {
+    public func getNumWidth() -> CGFloat {
         if let lastDigit = digitScrollers.last {
            let width = lastDigit.frame.origin.x + lastDigit.frame.width
             return width
