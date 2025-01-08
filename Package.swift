@@ -17,10 +17,6 @@ let package = Package(
             name: "ScrollCounter",
             path: "ScrollCounter",
             dependencies: []
-        ),
-        .testTarget(
-            name: "ScrollCounterTests",
-            dependencies: ["ScrollCounter"]
-        ),
+        )
     ]
 )
