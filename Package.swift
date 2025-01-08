@@ -15,6 +15,7 @@ let package = Package(
     targets: [
         .target(
             name: "ScrollCounter",
+            path: "ScrollCounter",
             dependencies: []
         ),
         .testTarget(
